@@ -1,4 +1,3 @@
-
 function InfoObj(info) {
     [this.language, this.group, this.career, this.soulFood, this.score] = info.trim().split(" ")
 }
