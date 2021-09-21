@@ -4,6 +4,7 @@ panix = {'A':1, 'B':2, 'C':3, 'D':4, 'E':5, 'F':6, 'G':7, 'H':8, 'I':9, 'J':10, 
 def solution(name):
     location = []
     rev_location = []
+    zig_zag_location = []
     total = 0
     for i in range(len(name)):
         if(name[i] != 'A'):
@@ -12,11 +13,16 @@ def solution(name):
             location.append(i)
             rev_location.append(len(name)-i)
     
-    for x in range(len(location)-1):
-        for y in range(len(location)):
-            location[x]*2
+    for i in range(len(location)-1):
+        temp = 0
+        temp += location[i]*2
+        temp += max(rev_location[i+1:])
+        
+        zig_zag_location.append(temp)
 
+    total += min(max(location), max(rev_location), min(zig_zag_location))
 
-    print(total) 
+    return total
 
 sol2 = solution("ABABAAAAAAABA")
+print(sol2)

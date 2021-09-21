@@ -1,5 +1,4 @@
 list = [0,1,2,3,4,5,6,7,8]
-combins = [[1], [[1,1]], [[1,2],[2,1]], ]
 
 def makeCombins(N):
     temp = []

@@ -1,8 +1,3 @@
-
-
-
-
-
 def solution(m, n, puddles):
     distance = m+n-1
     list=[0]*distance

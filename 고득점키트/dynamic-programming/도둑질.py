@@ -1,23 +1,13 @@
 def solution(money):
-    numOfHouse = len(money)
-    newMoney = money.copy()
-    temp = []
-    for i in range(numOfHouse):
-        if(i%2==0):
-            temp.append(0)
-        else:
-            temp.append(1)
-    total = []
-    for i in range(numOfHouse):
-        sum = 0
-        for j in range(numOfHouse):
-            sum += newMoney[j]*temp[j]
-        total.append(sum)
-        last = newMoney.pop()
-        newMoney.insert(0, last)
-
-    return max(total)
-
-money = [1,2,3,1,2,3,1,2]
-sol = solution(money)
-print(sol)
+    dp = [0]*len(money)
+    dp[0] = money[0]
+    dp[1] = max(money[0], money[1])
+    for i in range(2, len(money)-1):
+        dp[i] = max(dp[i-1], dp[i-2]+money[i])
+    
+    dp2 = [0 for _ in range(len(money))]
+    dp2[1] = money[1]
+    for i in range(2, len(money)):
+        dp2[i] = max(dp2[i-1], dp2[i-2]+money[i])
+    
+    return max(max(dp), max(dp2))
