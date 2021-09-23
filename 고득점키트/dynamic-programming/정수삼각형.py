@@ -1,5 +1,3 @@
-
-
 def solution(triangle):
     height = len(triangle)
     list = [0]*height    
@@ -10,15 +8,17 @@ def solution(triangle):
         xList = list[i-1]
         temp = []
         for j in range(i+1):
-            left = 0
-            right = 0
+            left, right = 0, 0
+
             if(j-1>=0):
                 left = xList[j-1] + triangle[i][j]
-            
+
             if(j<len(xList)):
                 right = xList[j] + triangle[i][j]
+
             if(left>right):
                 temp.append(left)
+
             else:
                 temp.append(right)
         list[i] = temp

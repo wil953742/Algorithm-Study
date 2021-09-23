@@ -1,9 +1,8 @@
 def solution(number, k):
     stack = []
     for i in range(len(number)):
-  
         curr = number[i]
-        while True:
+        while 1:
             if len(stack)==0:
                 stack.append(curr)
                 break

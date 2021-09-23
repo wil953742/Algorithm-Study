@@ -9,14 +9,12 @@ def solution(n, lost, reserve):
     for r in reserve:
         if students[r-1]==0:
             students[r-1] = 1
-        
         else:
             new_reserve.append(r)
 
     for r in new_reserve:
         if r-2>=0 and students[r-2]==0:
             students[r-2] = 1
-            
         elif r<len(students) and students[r]==0:
             students[r] = 1
 
