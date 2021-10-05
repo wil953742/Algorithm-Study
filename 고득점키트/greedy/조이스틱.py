@@ -22,6 +22,8 @@ def solution(name):
 
     total += min(max(location), max(rev_location), min(zig_zag_location))
 
+    print(location)
+    print(rev_location)
     return total
 
 sol2 = solution("ABABAAAAAAABA")
