@@ -1,4 +1,3 @@
-a = [[1,2], [3,4], [5,6]]
-
-b = list(map(lambda x:x[0], a))
-print(b)
+for i in range(4):
+  for j in range(i):
+    print(j)
