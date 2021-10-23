@@ -1,3 +1,5 @@
-for i in range(4):
-  for j in range(i):
-    print(j)
+dic = {'a':1, 'b':2}
+if dic.get('c'):
+  print('yese')
+else:
+  print('none')
