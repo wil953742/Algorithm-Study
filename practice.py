@@ -1,5 +1,3 @@
-dic = {'a':1, 'b':2}
-if dic.get('c'):
-  print('yese')
-else:
-  print('none')
+setA = {1,2,3,4,5,1,2,3,4}
+
+print(setA);
