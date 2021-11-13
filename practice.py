@@ -1,3 +1,8 @@
-setA = {1,2,3,4,5,1,2,3,4}
+import heapq
 
-print(setA);
+heap = [4, 5, 1, 2, 12, 9]
+max_heap = [(-num, num) for num in heap]
+print(max_heap)
+
+heapq.heapify(max_heap)
+print(max_heap)
