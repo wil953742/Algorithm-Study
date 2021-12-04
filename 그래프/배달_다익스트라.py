@@ -39,6 +39,7 @@ def solution(N, road, K):
     graph[a].append([b, c])
     graph[b].append([a, c])  
   
+  print(graph)
   routes = dijkstra(1, graph, dist)
   print(routes)
   answer = 0

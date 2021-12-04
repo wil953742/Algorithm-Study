@@ -1,8 +1,13 @@
 import heapq
 
-heap = [4, 5, 1, 2, 12, 9]
-max_heap = [(-num, num) for num in heap]
-print(max_heap)
+heap = [ 3, 5, 12, 45, 2, 6, 22, 13]
 
-heapq.heapify(max_heap)
-print(max_heap)
+heapq.heapify(heap)
+print(heap)
+
+heapq.heappush(heap, 1)
+print(heap)
+
+top = heapq.heappop(heap)
+print(top)
+print(heap)
