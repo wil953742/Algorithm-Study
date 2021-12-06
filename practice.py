@@ -1,13 +1,9 @@
-import heapq
+heap = [0, 0, 0]
 
-heap = [ 3, 5, 12, 45, 2, 6, 22, 13]
+def test(list):
+  newList = list[:]
+  newList[0] = 1
+  
+test(heap)
 
-heapq.heapify(heap)
-print(heap)
-
-heapq.heappush(heap, 1)
-print(heap)
-
-top = heapq.heappop(heap)
-print(top)
 print(heap)
