@@ -12,10 +12,10 @@ class Deque {
   #tail;
   constructor(list = []) {
     this.length = 0;
-    this.#initDeque(list);
+    this.initDeque(list);
   }
 
-  #initDeque(list) {
+  initDeque(list) {
     this.#head = null;
     this.#tail = null;
 
@@ -52,7 +52,7 @@ class Deque {
     if (!this.length) return null;
     const value = this.#tail.value;
     this.length--;
-    if (!this.length) this.#initDeque([]);
+    if (!this.length) this.initDeque([]);
     else {
       this.#tail = this.#tail.prev;
       this.#tail.next = null;
@@ -64,7 +64,7 @@ class Deque {
     if (!this.length) return null;
     const value = this.#head.value;
     this.length--;
-    if (!this.length) this.#initDeque([]);
+    if (!this.length) this.initDeque([]);
     else {
       this.#head = this.#head.next;
       this.#head.prev = null;
