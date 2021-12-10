@@ -8,7 +8,8 @@ Implemented with DLL(Double Linked List)
 It takes O(1) time with push, pushleft, pop, popleft methods
 
 - Define
-  `const deque = new Deque()` <br/>
+  <br/>
+  `const deque = new Deque()` or <br/>
   `const deque = new Deque([1,2,3,4,5])`
 
 - valuable & method
