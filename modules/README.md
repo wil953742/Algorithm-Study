@@ -4,7 +4,7 @@ created by [wil953742](https://github.com/wil953742), [Nastro](https://github.co
 
 ### 1. Deque
 
-Implemented with DLL(Double Linked List)
+Implemented with DLL(Double Linked List) <br/>
 It takes O(1) time with push, pushleft, pop, popleft methods
 
 - Define
