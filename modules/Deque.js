@@ -11,15 +11,15 @@ class Deque {
   #head;
   #tail;
   constructor(list = []) {
-    this.length = list.length;
+    this.length = 0;
     this.#initDeque(list);
   }
 
   #initDeque(list) {
-    if (!list) {
-      this.#head = null;
-      this.#tail = null;
-    } else {
+    this.#head = null;
+    this.#tail = null;
+
+    if (list) {
       list.forEach((value) => {
         this.push(value);
       });
