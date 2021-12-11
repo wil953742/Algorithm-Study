@@ -6,8 +6,12 @@ class Node {
 
 // 힙의 특징 : 부모가 항상 자식보다 작거나 같은 트리 기반의 자료 구조
 class Heap {
-  constructor() {
+  constructor(list = []) {
     this.heap = [];
+
+    list.forEach(ele => {
+      this.push(ele);
+    })
   }
 
   push(value) {
@@ -26,7 +30,7 @@ class Heap {
       this.heap[0] = this.heap.pop();
       this.#heapifyDown();
     }
-    return rootNode;
+    return rootNode.value;
   }
 
   #heapifyUp() {
@@ -92,4 +96,9 @@ class PriorityQueue extends Heap {
   }
 }
 
-module.exports = PriorityQueue;
+module.exports = Heap;
+
+
+const heap = new Heap([100, 2, 132, 15, 11]);
+
+console.log(heap.pop());

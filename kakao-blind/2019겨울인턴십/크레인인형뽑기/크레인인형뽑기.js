@@ -1,4 +1,4 @@
-const Deque = require("../../modules/Deque");
+const Deque = require("../../../modules/Deque");
 
 const solution = (board, moves) => {
   let answer = 0;
