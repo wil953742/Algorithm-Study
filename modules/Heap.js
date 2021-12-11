@@ -97,8 +97,3 @@ class PriorityQueue extends Heap {
 }
 
 module.exports = Heap;
-
-
-const heap = new Heap([100, 2, 132, 15, 11]);
-
-console.log(heap.pop());
