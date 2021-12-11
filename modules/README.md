@@ -12,7 +12,7 @@ It takes O(1) time with push, pushleft, pop, popleft methods
   `const deque = new Deque()` or <br/>
   `const deque = new Deque([1,2,3,4,5])`
 
-- variable & method
+- Variable & Method
   - **deque.length**: Return total length of deque
   - **deque.push(value)**: push value in the list from **right**
   - **deque.pushleft(value)**: push value in the list from **left**
@@ -31,7 +31,7 @@ It takes O(logN) time with push, pop and O(1) time with peek
   `const heap = new Heap()` or <br/>
   `const heap = new Heap([5,4,3,2,1])`
 
-- variable & method
+- Variable & Method
   - **push(value)**: push value into the heap
   - **pop()**: remove head node and get the smallest value
 
@@ -39,6 +39,6 @@ It takes O(logN) time with push, pop and O(1) time with peek
 
 ### 3. func Permutation & Combination
 
-- How to use?
+- How to use? <br/>
 `const permutation = Permutation([1,2,3,4], 2)` <br/>
 `const combination = Combination([1,2,3,4], 2)`
