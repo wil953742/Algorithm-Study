@@ -12,5 +12,6 @@
 [바로가기](https://github.com/wil953742/CordingTest/tree/master/modules)
 
 - [x] Deque (DLL)
-- [x] PriorityQueue(heapq)
+- [x] Heap(priorityQueue)
+- [x] Permutation & Combination
 - [ ] DefaultDict
